@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.lumi.zidonghua.ZDHActivityAddMain">
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FF59B683"
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="新建自动化"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:src="@drawable/jiajia"
+            android:layout_width="56dp"
+            android:text="保存"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:id="@+id/baocun"
+            android:layout_marginRight="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_constraintTop_toBottomOf="@+id/topbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="22sp"
+                android:id="@+id/rr"
+                android:textColor="#111111"
+                android:text="触发条件"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                app:layout_constraintBottom_toBottomOf="@+id/rr"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/rr"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:id="@+id/tiaojian"
+                android:gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textSize="12sp"
+                    android:textColor="#444444"
+                    android:text="满足所有条件"
+                    android:id="@+id/ddffg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/xiajian"
+                    android:layout_width="12dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_height="12dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/ghh"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/rr"
+                android:background="#f8f9fb"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerview1"
+                app:layout_constraintTop_toBottomOf="@+id/ghh"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="添加"
+                android:textSize="16sp"
+                android:id="@+id/add1"
+                android:textColor="#FF59B683"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerview1"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"/>
+
+            <View
+                android:id="@+id/fgww"
+                app:layout_constraintTop_toBottomOf="@+id/add1"
+                android:background="#F8F9FB"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@+id/fgww"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="22sp"
+                android:id="@+id/reeee"
+                android:textColor="#111111"
+                android:text="执行任务"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <View
+                android:id="@+id/ghheer"
+                app:layout_constraintTop_toBottomOf="@+id/reeee"
+                android:background="#f8f9fb"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerview2"
+                app:layout_constraintTop_toBottomOf="@+id/ghheer"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="添加"
+                android:textSize="16sp"
+                android:id="@+id/add2"
+                android:textColor="#FF59B683"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerview2"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"/>
+            <View
+                android:id="@+id/ffggew"
+                app:layout_constraintTop_toBottomOf="@+id/add2"
+                android:background="#F8F9FB"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

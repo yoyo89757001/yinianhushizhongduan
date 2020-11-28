@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wifi_config_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:background="#FF59B683"
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="第二步,连接WI-FI"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="如果你使用的是双频路由器,请不要让设备连接5G频段的WI-FI"
+            android:textColor="@color/red"
+            android:textSize="15sp"
+            android:layout_margin="12dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:lineSpacingExtra="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputlayout_bg"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络"
+                android:textColor="@color/common_text"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/tvSSID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:hint="当前WI-FI名称"
+                android:singleLine="true"
+                android:textColor="@color/common_text"
+                android:textSize="14sp"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputlayout_bg"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textColor="@color/common_text"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="20"
+                android:inputType="text"
+                android:maxLength="64"
+                android:singleLine="true"
+                android:textColor="@color/common_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

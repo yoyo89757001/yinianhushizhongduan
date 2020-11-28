@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <ImageView
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      android:layout_marginStart="16dp"
+      android:id="@+id/image"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:layout_width="56dp"
+      android:layout_height="56dp"/>
+
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        android:id="@+id/ddd"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image"
+        android:src="@drawable/you1"
+        android:layout_width="14dp"
+        android:layout_height="14dp"/>
+
+    <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+        app:layout_constraintLeft_toRightOf="@+id/image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="12dp"
+        android:textSize="14sp"
+        app:qmui_maxTextSize="14sp"
+        app:qmui_minTextSize="8sp"
+        android:maxLines="1"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintRight_toLeftOf="@+id/ddd"
+        android:textColor="#888888"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <View
+        android:background="#f1f1f1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

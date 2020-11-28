@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragmengmain.Fragment2">
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/zxingview"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        app:qrcv_animTime="1000"
+        app:qrcv_barCodeTipText="将条码放入框内，即可自动扫描"
+        app:qrcv_barcodeRectHeight="120dp"
+        app:qrcv_borderColor="#00FFFFFF"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="#FF69FF00"
+        app:qrcv_cornerDisplayType="center"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+
+        app:qrcv_isAutoZoom="true"
+        app:qrcv_isBarcode="false"
+        app:qrcv_isOnlyDecodeScanBoxArea="false"
+        app:qrcv_isScanLineReverse="true"
+        app:qrcv_isShowDefaultGridScanLineDrawable="false"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_isShowLocationPoint="true"
+        app:qrcv_isShowTipBackground="true"
+        app:qrcv_isShowTipTextAsSingleLine="false"
+        app:qrcv_isTipTextBelowRect="false"
+        app:qrcv_maskColor="#3E2E2E2E"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="#FF69FF00"
+        app:qrcv_scanLineMargin="0dp"
+        app:qrcv_scanLineSize="0.5dp"
+        app:qrcv_tipTextColor="@android:color/white"
+        app:qrcv_tipTextSize="12sp"
+        app:qrcv_toolbarHeight="56dp"
+        app:qrcv_topOffset="75dp"
+        app:qrcv_verticalBias="-1" />
+
+
+
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        app:qmui_topbar_title_text_size="18sp"
+        android:paddingLeft="10dp"
+        app:qmui_topbar_title_color="@color/white"
+        android:id="@+id/topbar"
+        app:qmui_topbar_title_gravity="center"
+        app:qmui_topbar_image_btn_width="22dp"
+        app:qmui_topbar_image_btn_height="22dp"
+        android:background="#FF59B683"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_weight="2"
+            android:layout_width="1dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:textColor="#FFB6B6B6"
+            android:text="将二维码/条码放入框内,即可自动扫描"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:baselineAligned="false"
+        android:id="@+id/ggg3"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/tl1"
+            android:layout_marginRight="80dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:text="签到"
+                android:id="@+id/t1"
+                android:layout_width="88dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="#ffffff"
+                android:layout_width="50dp"
+                android:id="@+id/v1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/t1"
+                app:layout_constraintRight_toRightOf="@+id/t1"
+                android:layout_height="2dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="88dp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/tl2"
+            android:layout_height="match_parent">
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:text="巡房"
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="#ffffff"
+                android:layout_width="50dp"
+                android:id="@+id/v2"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/t2"
+                app:layout_constraintRight_toRightOf="@+id/t2"
+                android:layout_height="2dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+
+    <com.qmuiteam.qmui.layout.QMUIButton
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ggg3"
+        android:text="关闭闪光灯"
+        android:visibility="gone"
+        android:id="@+id/guan"
+        android:layout_marginBottom="20dp"
+        android:background="#FF59B683"
+        android:textColor="@color/white"
+        android:layout_width="86dp"
+        android:layout_height="32dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

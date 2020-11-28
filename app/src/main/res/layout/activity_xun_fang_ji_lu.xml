@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF5F5F5"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments1.TastActivity">
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FF59B683"
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="巡房记录"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ggg3"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/topbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:id="@+id/tl1"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#FF59B683"
+                android:textSize="14sp"
+                android:text="签到"
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="#FF59B683"
+                android:layout_width="0dp"
+                android:id="@+id/v1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/t1"
+                app:layout_constraintRight_toRightOf="@+id/t1"
+                android:layout_height="2dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tl2"
+            android:layout_height="match_parent">
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#FFA7A7A7"
+                android:textSize="14sp"
+                android:text="巡房"
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="#FF59B683"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:id="@+id/v2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/t2"
+                app:layout_constraintRight_toRightOf="@+id/t2"
+                android:layout_height="2dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ghhh"
+        app:layout_constraintTop_toBottomOf="@+id/ggg3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:background="@drawable/ques_bg"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:id="@+id/left_ll"
+            android:layout_width="wrap_content"
+            android:minWidth="72dp"
+           android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_height="26dp">
+
+            <TextView
+                android:textColor="#FFB6B6B6"
+                android:textSize="12sp"
+                android:text="本月"
+                android:id="@+id/left_tv"
+                android:layout_marginRight="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/xia_fuwu"
+                android:layout_width="12dp"
+                android:layout_height="12dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#FFB6B6B6"
+            android:textSize="13sp"
+            android:id="@+id/right_tv"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="总签到200次"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpage"
+        app:layout_constraintTop_toBottomOf="@+id/ghhh"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

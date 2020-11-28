@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.lumi.zidonghua.AddDangActivity">
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FF59B683"
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="触发条件"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <com.example.yiliaoyinian.views.TempRecyclerView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/topbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerview"
+            android:background="@color/white"
+            android:layout_height="match_parent"/>
+
+    </com.example.yiliaoyinian.views.TempRecyclerView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

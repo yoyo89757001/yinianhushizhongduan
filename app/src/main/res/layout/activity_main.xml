@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/llgg"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/im1"
+                android:background="@drawable/work"
+                android:layout_width="22dp"
+                android:layout_height="22dp"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:textColor="#333333"
+                android:textSize="10sp"
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="工作"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/im2"
+                android:background="@drawable/saoma"
+                android:layout_width="22dp"
+                android:layout_height="22dp"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:textColor="#FFC1C1C2"
+                android:textSize="10sp"
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="扫码"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/im3"
+                android:background="@drawable/data"
+                android:layout_width="22dp"
+                android:layout_height="22dp"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:id="@+id/tv3"
+                android:textColor="#FFC1C1C2"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="数据"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/im4"
+                android:background="@drawable/manage"
+                android:layout_width="22dp"
+                android:layout_height="22dp"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:id="@+id/tv4"
+                android:textColor="#FFC1C1C2"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="管理"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        app:layout_constraintBottom_toTopOf="@+id/llgg"
+        android:layout_below="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/ghhh"
+        android:background="#eeeeeeee"/>
+
+    <com.example.yiliaoyinian.views.ControlScrollViewPager
+        android:id="@+id/viewpage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ghhh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@+id/ghhh"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/recyclerview"
+        android:visibility="gone"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/ghhh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

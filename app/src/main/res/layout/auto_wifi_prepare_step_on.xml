@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wifi_config_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="#FF59B683"
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="第一步,准备好设备"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/topTip"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="请将设备插上电后等待大约30秒,直到设备启动完成"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imageBg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/prepare_device" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="设备已启动好,且是第一次配置网络"
+            android:textColor="@color/white"
+            android:textSize="@dimen/realplay_button_text_size" />
+
+        <Button
+            android:id="@+id/btnIntroduce"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ez_btn_r1_retry_selector"
+            android:text="这台设备以前配过网络"
+            android:textColor="@color/quality_focused_color"
+            android:textSize="@dimen/realplay_button_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

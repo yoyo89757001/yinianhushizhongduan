@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragments1.fuwu.AddServerActivity">
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FF59B683"
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="添加服务"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+        <ScrollView
+            android:background="#F5F5F5"
+            android:id="@+id/scrollView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/c1"
+                        android:layout_height="56dp">
+                        <TextView
+                            android:layout_marginLeft="16dp"
+                            android:textColor="#333333"
+                            android:textSize="14sp"
+                            android:text="姓名"
+                            android:id="@+id/n1"
+                            android:minWidth="86dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <ImageView
+                            android:layout_marginRight="16dp"
+                            android:id="@+id/im1"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:src="@drawable/you_fuw"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:textColor="#333333"
+                            android:hint="请选择患者"
+                            android:textSize="14sp"
+                            android:inputType="text"
+                            android:id="@+id/name"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/n1"
+                            android:textColorHint="#D7D7D7"
+                            android:background="@null"
+                            android:layout_marginRight="12dp"
+                            app:layout_constraintRight_toLeftOf="@+id/im1"
+                            android:focusableInTouchMode="false"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                        <View
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:background="#D7D7D7"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+                        <View
+                            android:id="@+id/viewBT1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--////////////////////////////////////////////////////////////////////-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/c2"
+                    android:layout_height="56dp">
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:text="开始时间"
+                        android:id="@+id/n2"
+                        android:minWidth="86dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <ImageView
+                        android:layout_marginRight="16dp"
+                        android:id="@+id/im2"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:src="@drawable/sj_fuwu"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:textColor="#333333"
+                        android:hint="请选择护理开始时间"
+                        android:textSize="14sp"
+                        android:inputType="text"
+                        android:id="@+id/time1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/n2"
+                        android:textColorHint="#D7D7D7"
+                        android:background="@null"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintRight_toLeftOf="@+id/im2"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:background="#D7D7D7"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <View
+                        android:id="@+id/viewBT2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+          <!--////////////////////////////////////////////////////////////////////-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/c2_1"
+                    android:layout_height="56dp">
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:text="结束时间"
+                        android:id="@+id/n2_1"
+                        android:minWidth="86dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <ImageView
+                        android:layout_marginRight="16dp"
+                        android:id="@+id/im2_1"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:src="@drawable/sj_fuwu"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:textColor="#333333"
+                        android:hint="请选择护理结束时间"
+                        android:textSize="14sp"
+                        android:inputType="text"
+                        android:id="@+id/time2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/n2_1"
+                        android:textColorHint="#D7D7D7"
+                        android:background="@null"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintRight_toLeftOf="@+id/im2_1"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:background="#D7D7D7"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <View
+                        android:id="@+id/viewBT3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+   <!--////////////////////////////////////////////////////////////////////-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/c3"
+                    android:layout_height="56dp">
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:text="服务类型"
+                        android:id="@+id/n3"
+                        android:minWidth="86dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <ImageView
+                        android:layout_marginRight="16dp"
+                        android:id="@+id/im3"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:src="@drawable/xia_fuwu"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:textColor="#333333"
+                        android:hint="请选择服务类型"
+                        android:textSize="14sp"
+                        android:inputType="text"
+                        android:id="@+id/leixing"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/n3"
+                        android:textColorHint="#D7D7D7"
+                        android:background="@null"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintRight_toLeftOf="@+id/im3"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:background="#D7D7D7"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <View
+                        android:id="@+id/viewBT4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+     <!--////////////////////////////////////////////////////////////////////-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/c4"
+                    android:layout_height="56dp">
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:text="服务项目"
+                        android:id="@+id/n4"
+                        android:minWidth="86dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <ImageView
+                        android:layout_marginRight="16dp"
+                        android:id="@+id/im4"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:src="@drawable/xia_fuwu"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:textColor="#333333"
+                        android:hint="请选择服务项目"
+                        android:textSize="14sp"
+                        android:id="@+id/xiangmu"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/n4"
+                        android:textColorHint="#D7D7D7"
+                        android:background="@null"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintRight_toLeftOf="@+id/im4"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:background="#D7D7D7"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <View
+                        android:id="@+id/viewBT5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--////////////////////////////////////////////////////////////////////-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:text="服务内容"
+                        android:id="@+id/n5"
+                        android:minWidth="86dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:textColor="#333333"
+                        android:hint="请输入服务内容"
+                        android:textSize="14sp"
+                        android:id="@+id/neirong"
+                        android:gravity="start"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/n5"
+                        android:textColorHint="#D7D7D7"
+                        android:background="@null"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginRight="16dp"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_width="0dp"
+                        android:minHeight="110dp"
+                        android:layout_height="110dp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    <com.qmuiteam.qmui.layout.QMUIButton
+        android:background="#59B683"
+        android:text="发布"
+        android:id="@+id/fabu"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="52dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

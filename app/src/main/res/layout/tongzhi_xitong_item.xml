@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_marginTop="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#FF4C4C4C"
+        android:textSize="12sp"
+        android:id="@+id/time"
+        android:text="2020-12-22 12:12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        android:background="@drawable/zidonghuoqu122"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="14dp"
+            android:id="@+id/laba"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/laba3"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+
+        <TextView
+            app:layout_constraintTop_toTopOf="@+id/laba"
+            app:layout_constraintBottom_toBottomOf="@+id/laba"
+            app:layout_constraintLeft_toRightOf="@+id/laba"
+            app:layout_constraintRight_toLeftOf="@+id/hyh"
+            android:text="系统消息"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:id="@+id/title"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="#FF4C4C4C"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="@+id/laba"
+            app:layout_constraintBottom_toBottomOf="@+id/laba"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="16dp"
+            android:id="@+id/hyh"
+            android:src="@drawable/you1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+
+        <View
+            app:layout_constraintTop_toBottomOf="@+id/laba"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="14dp"
+            android:id="@+id/tt"
+            android:background="#FFF5F5F5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/tt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="14sp"
+            android:text="内容"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/content_tv"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#FF4C4C4C"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

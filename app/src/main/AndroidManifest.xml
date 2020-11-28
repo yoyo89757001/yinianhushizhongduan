@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    package="com.example.yiliaoyinian">
+
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 视频通话权限所需 -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.Camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tool:ignore="LockedOrientationActivity"
+        tool:targetApi="n">
+        <activity android:name=".ui.lumi.zidonghua.WGPlay1Activity"></activity>
+        <activity android:name=".ui.lumi.zidonghua.ColorSelectActivity" />
+        <activity android:name=".ui.lumi.zidonghua.DongZuoListActivity" />
+        <activity android:name=".ui.lumi.wuxiankaiguan.WuXianKaiGuanSettingActivity" />
+        <activity android:name=".ui.lumi.wuxiankaiguan.WuXianKaiGuanActivity" />
+        <activity android:name=".ui.lumi.dongjingtie.DongJinTieSettingActivity" />
+        <activity android:name=".ui.lumi.dongjingtie.DongJinTieActivity" />
+        <activity android:name=".ui.lumi.menchuangchuanganqi.MenChuangChuanGanSettingQiActivity" />
+        <activity android:name=".ui.lumi.menchuangchuanganqi.MenChuangChuanGanQiActivity" />
+        <activity android:name=".ui.lumi.rentichuanganqi.RenTiChuanGanQiSettingActivity" />
+        <activity android:name=".ui.lumi.rentichuanganqi.RenTiChuanGanQiActivity2" />
+        <activity android:name=".ui.lumi.rentichuanganqi.RenTiChuanGanQiActivity" />
+        <activity android:name=".ui.lumi.zidonghua.ZiDingYiTimeActivity" />
+        <activity android:name=".ui.lumi.zidonghua.ChongFuShiJianActivity" />
+        <activity android:name=".ui.lumi.zidonghua.DingShiActivity" />
+        <activity android:name=".ui.lumi.zidonghua.ZDHListActivity" />
+        <activity android:name=".ui.lumi.zidonghua.AddJiuActivity" />
+        <activity android:name=".ui.lumi.zidonghua.AddDangActivity" />
+        <activity android:name=".ui.lumi.zidonghua.ZDHActivityAddMain" />
+        <activity android:name=".ui.lumi.wangguan.WangLuosActivity" />
+        <activity android:name=".ui.lumi.zidonghua.ZDHActivity1" />
+        <activity android:name=".ui.lumi.wangguan.GengDuocActivity" />
+        <activity android:name=".ui.lumi.AddSonDeviceActivity" />
+        <activity android:name=".ui.lumi.wangguan.AddWGActivity3" />
+        <activity android:name=".ui.lumi.wangguan.AddWGActivity2" />
+        <activity android:name=".ui.lumi.wangguan.AddWGActivity1" />
+        <activity android:name=".ui.lumi.AddDeviceLumiActivity" />
+        <activity android:name=".ui.lumi.wangguan.WGInfosListActivity" />
+        <activity android:name=".ui.lumi.wangguan.WGSettingActivity" />
+        <activity android:name=".ui.lumi.wangguan.WGConfigActivity" />
+        <activity android:name=".dialog.DialogActivity" />
+        <activity android:name=".ui.lumi.zidonghua.ZhiXingListActivity" />
+        <activity android:name=".ui.lumi.wenshidu.WenShiDuActivity" />
+        <activity
+            android:name=".ui.shuju.camera.ChuangJiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.bed.DeviceConfigBedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.leida.ShenWuLeiDaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wode.WenZhangInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.camera.DeviceConfigBleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.camera.DeviceConfigSleepActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.camera.DeviceConfigBle2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.camera.DeviceConfigCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.camera.DeviceWifiActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".ui.shuju.camera.CameraPlayActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".ui.BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.CeLiangJiLuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wode.MessageInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.zhiban.AddBianQianActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.LanYaXueYaJiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".ui.zhiban.ZhiBanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wode.SystemMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wode.WoDeZiLiaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.fragments1.dairuke.RuKeNextActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.fragments1.dairuke.RuKeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.xunfang.XunFangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.fragments1.huanzhe.PatientInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SaoMaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFull" />
+        <activity
+            android:name=".ui.fragments1.fuwu.SelectPatientsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.xunfang.XunFangJiLuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.fragments1.fuwu.AddServerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait" /> <!-- android:launchMode="singleInstance" 这个模式会导致二级界面按home键之后 返回 会回到主界面(奇怪的问题) -->
+        <activity
+            android:name=".ui.shuju.camera.EZRealPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.bed.EZRealPlayToBedActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.camera.AutoWifiPrepareStepOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.camera.AutoWifiResetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.camera.AutoWifiNetConfigActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shuju.camera.ConfigWifiExecutingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.fragments1.fuwu.TaskInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.lumi.dengpao.DPSettingActivity" />
+        <activity android:name=".ui.lumi.dengpao.DPInfosListActivity" />
+        <activity android:name=".ui.lumi.zidonghua.SeWenSelectActivity" />
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="375" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="812" /> <!-- Since JCore2.0.0 Required SDK核心功能 -->
+        <!-- 可配置android:process参数将Service放在其他进程中；android:enabled属性不能是false -->
+        <!-- 这个是自定义Service，要继承极光JCommonService，可以在更多手机平台上使得推送通道保持的更稳定 -->
+        <service
+            android:name=".services.JpushService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":pushcore"
+            tool:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service> <!-- Required since 3.0.7 -->
+        <!-- 新的 tag/alias 接口结果返回需要开发者配置一个自定的广播 -->
+        <!-- 3.3.0开始所有事件将通过该类回调 -->
+        <!-- 该广播需要继承 JPush 提供的 JPushMessageReceiver 类, 并如下新增一个 Intent-Filter -->
+        <receiver
+            android:name=".services.MyJPushMessageReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+
+                <category android:name="com.yinian.zhihui.yanglao" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".utils.wifiutils.NetworkService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

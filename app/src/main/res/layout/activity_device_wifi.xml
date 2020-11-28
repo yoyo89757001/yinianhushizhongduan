@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="#FF59B683"
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="为设备配置WIFI"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffede1"
+        android:drawableLeft="@drawable/console_ic_warning"
+        android:drawablePadding="7dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:text="请不要连接5G频段的WIFI"
+        android:textColor="#333333"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/ly_net"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="11dp"
+        android:background="@drawable/console_bg_input"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="网络"
+            android:textColor="#333333"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_net"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:hint="暂未连接WiFi"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:textColorHint="#d7d7d7"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:visibility="gone"
+            android:contentDescription="@null"
+            android:src="@drawable/xia_fuwu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="11dp"
+        android:background="@drawable/console_bg_input"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="密码"
+            android:textColor="#333333"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="请输入WiFi密码"
+            android:background="@null"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:textColorHint="#d7d7d7"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="暂时无法配网，请前往手机“设置-权限管理”开启定位功能"
+        android:textColor="#ff0000"
+        android:textSize="10sp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/console_bg_positive2"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="开始配网"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+</LinearLayout>

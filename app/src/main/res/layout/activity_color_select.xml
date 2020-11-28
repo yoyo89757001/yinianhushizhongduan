@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.lumi.zidonghua.ColorSelectActivity">
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FF59B683"
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="智能网关"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:src="@drawable/san2"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:id="@+id/shezhi"
+            android:layout_marginRight="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/scrollView"
+        android:background="#F8F9FB"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/topbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.skydoves.colorpickerview.ColorPickerView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/colorPickerView"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+        <TextView
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#8A8989"
+            android:id="@+id/infiss"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/colorPickerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/seekbar"
+        android:visibility="gone"
+        android:layout_marginRight="60dp"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

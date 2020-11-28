@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragments1.dairuke.RuKeNextActivity">
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FF59B683"
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="入科"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@+id/topbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/klkl"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    app:qmui_minTextSize="8sp"
+                    app:qmui_maxTextSize="14sp"
+                    android:text="ID:8979893231"
+                    android:id="@+id/idid"
+                    android:textColor="#646464"
+                    android:layout_height="wrap_content"/>
+
+                <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:qmui_minTextSize="8sp"
+                    app:qmui_maxTextSize="14sp"
+                    android:text="姓名:马冬梅"
+                    android:id="@+id/name"
+                    android:textColor="#646464"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/jjhh"
+                app:layout_constraintTop_toBottomOf="@+id/klkl"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    app:qmui_minTextSize="8sp"
+                    app:qmui_maxTextSize="14sp"
+                    android:text="性别:男"
+                    android:id="@+id/sex"
+                    android:textColor="#646464"
+                    android:layout_height="wrap_content"/>
+
+                <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:qmui_minTextSize="8sp"
+                    app:qmui_maxTextSize="14sp"
+                    android:text="年龄:0岁"
+                    android:id="@+id/age"
+                    android:textColor="#646464"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+                android:layout_width="0dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jjhh"
+                app:qmui_minTextSize="8sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                app:qmui_maxTextSize="14sp"
+                android:layout_marginRight="16dp"
+                android:text="身份证:"
+                android:id="@+id/shenfenzheng"
+                android:textColor="#646464"
+                android:layout_height="wrap_content"/>
+
+            <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+                android:layout_width="0dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shenfenzheng"
+                app:qmui_minTextSize="8sp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                app:qmui_maxTextSize="14sp"
+                android:text="床位:"
+                android:id="@+id/chuangwei"
+                android:textColor="#646464"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="0dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chuangwei"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:textSize="14sp"
+                android:text="护理组: "
+                android:id="@+id/hulizu"
+                android:textColor="#646464"
+                android:layout_height="wrap_content"/>
+
+            <View
+                app:layout_constraintTop_toBottomOf="@+id/hulizu"
+                android:layout_marginTop="16dp"
+                android:id="@+id/juirtt"
+                android:background="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"/>
+
+            <!--////////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                app:layout_constraintTop_toBottomOf="@+id/juirtt"
+                android:layout_width="match_parent"
+                android:id="@+id/c1"
+                android:layout_height="56dp">
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:text="入住时间"
+                    android:id="@+id/n2"
+                    android:minWidth="86dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/im2"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/sj_fuwu"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:textColor="#333333"
+                    android:hint="请选入住时间"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:id="@+id/time_ruzhu"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/n2"
+                    android:textColorHint="#D7D7D7"
+                    android:background="@null"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintRight_toLeftOf="@+id/im2"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="#D7D7D7"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <View
+                    android:id="@+id/viewBt1a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--////////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                app:layout_constraintTop_toBottomOf="@+id/c1"
+                android:layout_width="match_parent"
+                android:id="@+id/c2"
+                android:layout_height="56dp">
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:text="护理等级"
+                    android:id="@+id/n3"
+                    android:minWidth="86dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/im3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/xia_fuwu"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:textColor="#333333"
+                    android:hint="请选择护理等级"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:id="@+id/hulidengji"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/n3"
+                    android:textColorHint="#D7D7D7"
+                    android:background="@null"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintRight_toLeftOf="@+id/im3"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="#D7D7D7"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <View
+                    android:id="@+id/viewBt2a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--////////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/c2"
+                android:id="@+id/c3"
+                android:layout_height="56dp">
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:text="科室"
+                    android:id="@+id/n4"
+                    android:minWidth="86dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/im4"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/xia_fuwu"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:textColor="#333333"
+                    android:hint="请选择科室"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:id="@+id/keshi"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/n4"
+                    android:textColorHint="#D7D7D7"
+                    android:background="@null"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintRight_toLeftOf="@+id/im4"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="#D7D7D7"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <View
+                    android:id="@+id/viewBt3a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--////////////////////////////////////////////////////////////////////-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/c3"
+                android:id="@+id/c4"
+                android:layout_height="56dp">
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:text="医生"
+                    android:id="@+id/n5"
+                    android:minWidth="86dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/im5"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/xia_fuwu"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:textColor="#333333"
+                    android:hint="请选择主治医师"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:id="@+id/zhuzhiyishi"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/n5"
+                    android:textColorHint="#D7D7D7"
+                    android:background="@null"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintRight_toLeftOf="@+id/im5"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="#D7D7D7"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <View
+                    android:id="@+id/viewBt4a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.qmuiteam.qmui.layout.QMUIButton
+                app:layout_constraintTop_toBottomOf="@+id/c4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="38dp"
+                android:id="@+id/wancheng"
+                android:layout_marginBottom="40dp"
+                android:layout_width="200dp"
+                android:textSize="14sp"
+                android:textColor="#FFFFFFFF"
+                android:text="完成入科"
+                android:background="#FF59B683"
+                android:layout_height="50dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.yiliaoyinian.ui.shuju.camera.ChuangJiActivity">
+
+
+
+    <Button
+        android:text="wifi"
+        android:id="@+id/klkl"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:text="搜索设备"
+        android:id="@+id/souo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+</LinearLayout>

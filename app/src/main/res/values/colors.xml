@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF59B683</color>
+    <color name="colorPrimaryDark">#FF59B683</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- common -->
+    <color name="black_bg">#000000</color>
+    <color name="dark_bg_70p">#bb000000</color>
+    <color name="common_bg">#f0f0f3</color>
+    <color name="common_sub_text">#888888</color>
+    <color name="black">#333333</color>
+    <color name="gray_text">#adadad</color>
+    <color name="red">#bd2228</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <!-- common -->
+
+    <color name="title_text">#333333</color>
+    <color name="common_text">#333333</color>
+    <color name="common_tex22t">#63000000</color>
+    <!-- scan color -->
+    <!-- camera -->
+    <!-- records -->
+    <!-- background -->
+    <!-- 橘色字体 -->
+    <color name="green">#4CAF50</color>
+    <!-- tab页面 -->
+    <!-- 画的线框的颜色 -->
+
+    <!-- wifi一键配置 -->
+
+    <!-- R1文件上传 -->
+    <!-- 消息 -->
+    <!-- 我的 -->
+
+    <!-- 回放列表 -->
+
+    <!-- 引导和登录 -->
+    <color name="quality_focused_color">#448cf3</color>
+    <color name="source_detection_btn_color">#48a9fb</color>
+
+    <!--视频通话-->
+
+
+    <!--视频通话-->
+</resources>

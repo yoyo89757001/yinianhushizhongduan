@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="@drawable/yinying1"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginBottom="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:qmui_minTextSize="8sp"
+            app:qmui_maxTextSize="13sp"
+            android:layout_marginTop="12dp"
+            android:textSize="13sp"
+            android:text="F238房"
+            android:id="@+id/fanghao"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:textColor="#FF4C4C4C"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            app:layout_constraintLeft_toLeftOf="@+id/fanghao"
+            app:layout_constraintRight_toRightOf="@+id/fanghao"
+            app:layout_constraintTop_toBottomOf="@+id/fanghao"
+            app:qmui_minTextSize="8sp"
+            app:qmui_maxTextSize="18sp"
+            android:id="@+id/chuanghao"
+            android:textSize="18sp"
+            android:text="0"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textColor="#FF59B683"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            app:layout_constraintLeft_toLeftOf="@+id/fanghao"
+            app:layout_constraintRight_toRightOf="@+id/fanghao"
+            app:layout_constraintTop_toBottomOf="@+id/chuanghao"
+            app:qmui_minTextSize="6sp"
+            app:qmui_maxTextSize="10sp"
+            android:id="@+id/logo"
+            android:background="@drawable/zidonghuoqu126"
+            android:textSize="10sp"
+            android:text="康宁"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textColor="#FF4C4C4C"
+            android:layout_width="50dp"
+            android:layout_height="20dp"/>
+
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            app:layout_constraintLeft_toRightOf="@+id/logo"
+            app:layout_constraintTop_toTopOf="@+id/fanghao"
+            app:layout_constraintBottom_toBottomOf="@+id/fanghao"
+            app:qmui_minTextSize="8sp"
+            app:qmui_maxTextSize="13sp"
+            android:id="@+id/hz"
+            android:layout_marginLeft="12dp"
+            android:textSize="13sp"
+            android:text="患者:"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textColor="#FFB6B6B6"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintLeft_toRightOf="@+id/hz"
+            app:layout_constraintTop_toTopOf="@+id/fanghao"
+            app:layout_constraintBottom_toBottomOf="@+id/fanghao"
+            android:id="@+id/huanzhe"
+            android:textSize="13sp"
+            android:text="马冬梅"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#FF4C4C4C"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"/>
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            app:layout_constraintLeft_toRightOf="@+id/logo"
+            app:layout_constraintTop_toTopOf="@+id/chuanghao"
+            app:layout_constraintBottom_toBottomOf="@+id/chuanghao"
+            app:qmui_minTextSize="8sp"
+            app:qmui_maxTextSize="14sp"
+            android:id="@+id/i1"
+            android:layout_marginLeft="12dp"
+            android:textSize="14sp"
+            android:text="ID:"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textColor="#FFB6B6B6"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"/>
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            app:layout_constraintLeft_toRightOf="@+id/i1"
+            app:layout_constraintTop_toTopOf="@+id/chuanghao"
+            app:layout_constraintBottom_toBottomOf="@+id/chuanghao"
+            app:qmui_minTextSize="8sp"
+            app:qmui_maxTextSize="13sp"
+            android:id="@+id/idid"
+            android:textSize="13sp"
+            android:text="123458"
+            android:maxLines="1"
+            android:textColor="#FF4C4C4C"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"/>
+
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            app:layout_constraintLeft_toRightOf="@+id/logo"
+            app:layout_constraintTop_toTopOf="@+id/logo"
+            app:layout_constraintBottom_toBottomOf="@+id/logo"
+            app:qmui_minTextSize="8sp"
+            app:qmui_maxTextSize="13sp"
+            android:id="@+id/zz"
+            android:layout_marginLeft="12dp"
+            android:textSize="13sp"
+            android:text="主治医师:"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textColor="#FFB6B6B6"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintLeft_toRightOf="@+id/zz"
+            app:layout_constraintTop_toTopOf="@+id/logo"
+            app:layout_constraintBottom_toBottomOf="@+id/logo"
+            android:id="@+id/zhuzhi"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:text="马冬梅"
+            android:maxLines="1"
+            android:textColor="#FF4C4C4C"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+<!--////////////////////////////////////////////////////////////////////////////////-->
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            app:layout_constraintLeft_toRightOf="@+id/zhuzhi"
+            app:layout_constraintTop_toTopOf="@+id/huanzhe"
+            app:layout_constraintBottom_toBottomOf="@+id/huanzhe"
+            app:qmui_minTextSize="8sp"
+            app:qmui_maxTextSize="13sp"
+            android:id="@+id/xb"
+            android:layout_marginLeft="12dp"
+            android:textSize="13sp"
+            android:text="性别:"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textColor="#FFB6B6B6"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"/>
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            app:layout_constraintLeft_toRightOf="@+id/xb"
+            app:layout_constraintTop_toTopOf="@+id/huanzhe"
+            app:layout_constraintBottom_toBottomOf="@+id/huanzhe"
+            app:qmui_minTextSize="8sp"
+            app:qmui_maxTextSize="13sp"
+            android:id="@+id/sex"
+            android:textSize="13sp"
+            android:text="男"
+            android:maxLines="1"
+            android:textColor="#FF4C4C4C"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"/>
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            app:layout_constraintLeft_toRightOf="@+id/zhuzhi"
+            app:layout_constraintTop_toTopOf="@+id/idid"
+            app:layout_constraintBottom_toBottomOf="@+id/idid"
+            app:qmui_minTextSize="8sp"
+            app:qmui_maxTextSize="13sp"
+            android:id="@+id/ry"
+            android:layout_marginLeft="12dp"
+            android:textSize="13sp"
+            android:text="入院时间:"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textColor="#FFB6B6B6"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"/>
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            app:layout_constraintLeft_toRightOf="@+id/ry"
+            app:layout_constraintTop_toTopOf="@+id/idid"
+            app:layout_constraintBottom_toBottomOf="@+id/idid"
+            app:qmui_minTextSize="8sp"
+            app:qmui_maxTextSize="13sp"
+            android:id="@+id/ruyuanshijian"
+            android:textSize="13sp"
+            android:text="2020-12-12"
+            android:maxLines="1"
+            android:textColor="#FF4C4C4C"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"/>
+
+
+        <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+            app:layout_constraintLeft_toRightOf="@+id/zhuzhi"
+            app:layout_constraintTop_toTopOf="@+id/zhuzhi"
+            app:layout_constraintBottom_toBottomOf="@+id/zhuzhi"
+            app:qmui_minTextSize="8sp"
+            app:qmui_maxTextSize="13sp"
+            android:id="@+id/bq"
+            android:layout_marginLeft="12dp"
+            android:textSize="13sp"
+            android:text="病情描述:"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textColor="#FFB6B6B6"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintLeft_toRightOf="@+id/bq"
+            app:layout_constraintTop_toTopOf="@+id/zhuzhi"
+            app:layout_constraintBottom_toBottomOf="@+id/zhuzhi"
+            android:maxLength="4"
+            android:id="@+id/bingqing"
+            android:textSize="13sp"
+            android:text="术后康复"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#FF4C4C4C"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

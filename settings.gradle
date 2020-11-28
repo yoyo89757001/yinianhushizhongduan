@@ -1,0 +1,2 @@
+include ':app', ':richtext', ':esptouch'
+rootProject.name = "yinianhushizhongduan"

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.lumi.wangguan.GengDuocActivity">
+
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FF59B683"
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="更多设置"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/fffe"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="提示音"
+        app:layout_constraintTop_toBottomOf="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/fffeee"
+        android:textColor="#777777"
+        android:textSize="14sp"
+        android:text="1%"
+        app:layout_constraintTop_toBottomOf="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:layout_marginTop="18dp"
+        android:id="@+id/seekbar"
+        app:layout_constraintLeft_toLeftOf="@+id/fffe"
+        app:layout_constraintRight_toRightOf="@+id/fffeee"
+        app:layout_constraintTop_toBottomOf="@+id/fffeee"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

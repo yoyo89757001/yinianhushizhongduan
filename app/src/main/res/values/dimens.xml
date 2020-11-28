@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="loading_text_size">15dp</dimen>
+
+    <!-- R1文件 -->
+
+    <!-- realplay text size -->
+    <dimen name="realplay_text_size">12dp</dimen>
+    <dimen name="realplay_button_text_size">15dp</dimen>
+    <dimen name="dp3">3dp</dimen>
+    <!-- 回放列表 -->
+
+    <!-- 引导和登录 -->
+
+    <dimen name="source_detection_text_size">23dp</dimen>
+
+    <!--文字大小-->
+    <!--标题文字-->
+    <!--正文文字-->
+
+    <!--控件间距-->
+
+    <!--功能控件宽度-->
+    <dimen name="width_functional_widget">100dp</dimen>
+
+
+</resources>

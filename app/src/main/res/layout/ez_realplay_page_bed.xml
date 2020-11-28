@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/realplay_page_ly"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/common_bg"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:background="#FF59B683"
+		android:id="@+id/statusBar"
+		android:layout_width="match_parent"
+		android:layout_height="46dp">
+		<ImageView
+			android:src="@drawable/fanhui2"
+			android:layout_marginLeft="16dp"
+			android:layout_centerVertical="true"
+			android:layout_width="22dp"
+			android:layout_height="22dp"/>
+
+		<View
+			android:id="@+id/fanhui"
+			android:layout_width="54dp"
+			android:layout_height="match_parent"/>
+
+		<TextView
+			android:textColor="#FFFFFFFF"
+			android:textSize="18sp"
+			android:text="智能床机"
+			android:id="@+id/myTitle"
+			android:layout_centerInParent="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/realplay_play_rl"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:background="@color/black_bg" >
+
+		<RelativeLayout
+			android:id="@+id/vg_play_window"
+			android:layout_width="match_parent"
+			android:layout_height="200dp">
+
+			<SurfaceView
+				android:id="@+id/realplay_sv"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@android:color/transparent" />
+
+			<include layout="@layout/realplay_loading_layout"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"/>
+
+		</RelativeLayout>
+
+		<include layout="@layout/ez_play_control"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_below="@id/vg_play_window"/>
+
+		<include layout="@layout/ez_realplay_prompt_layout" />
+
+		<RelativeLayout
+			android:id="@+id/realplay_capture_rl"
+			android:layout_width="65dp"
+			android:layout_height="45dp"
+			android:layout_alignBottom="@+id/vg_play_window"
+			android:layout_alignLeft="@+id/vg_play_window"
+			android:layout_alignStart="@+id/vg_play_window"
+			android:background="@color/white"
+			android:onClick="onClick"
+			android:padding="1dp"
+			android:visibility="gone">
+
+			<ImageView
+				android:id="@+id/realplay_capture_iv"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitXY" />
+
+			<ImageView
+				android:id="@+id/realplay_capture_watermark_iv"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitXY"
+				android:src="@drawable/video_file_watermark"
+				android:visibility="gone" />
+		</RelativeLayout>
+
+        <include layout="@layout/realplay_full_operate_layout" />
+        
+		<ImageView
+		    android:id="@+id/realplay_ptz_direction_iv"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_alignBottom="@+id/vg_play_window"
+		    android:background="@drawable/left_twinkle"
+		    android:scaleType="fitXY"
+		    android:visibility="gone" />
+		
+        <ImageButton
+            android:id="@+id/realplay_full_anim_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yuntai_pressed"
+            android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/chuangji_rl"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<include layout="@layout/ezopen_realplay_operate_bar"/>
+		<include layout="@layout/chuangji_item"/>
+
+		<FrameLayout
+			android:id="@+id/root_fl"
+			android:visibility="gone"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+		<com.example.yiliaoyinian.views.DragFloatActionButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:id="@+id/floatbutton"
+			app:elevation="6dp"
+			app:fabSize="mini"
+			android:clickable="true"
+			app:borderWidth="0dp"
+			android:backgroundTint="@color/white"
+			app:rippleColor="#04C5DA"
+			android:src="@drawable/qiehuan2"
+			app:pressedTranslationZ="10dp"
+			android:focusable="true" />
+
+	</RelativeLayout>
+
+
+</LinearLayout>

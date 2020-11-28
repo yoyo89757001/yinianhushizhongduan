@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="子设备"
+        android:id="@+id/tt"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/shuliang"
+        android:layout_marginRight="16dp"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:text="0个"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_toLeftOf="@+id/shuliang"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:text="共:"
+        android:layout_marginRight="2dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_below="@+id/tt"
+        android:background="#f1f1f1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>

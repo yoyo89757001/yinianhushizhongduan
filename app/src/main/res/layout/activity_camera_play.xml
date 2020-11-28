@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="#FF59B683"
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="视频监控"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/ly_video"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_below="@+id/statusBar"
+        android:layout_centerHorizontal="true"
+        android:background="#000000" />
+
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ly_video"
+        android:layout_alignBottom="@+id/ly_video">
+
+        <ImageButton
+            android:id="@+id/ib_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:src="@drawable/console_ic_video_play0"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/ib_pause"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/console_ic_video_play1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="不在线" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/sk_waiting"
+            style="@style/SpinKitView.Small.ThreeBounce"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            app:SpinKit_Color="#ffffff" />
+
+<!--        <com.example.yiliaoyinian.views.MultiVideoLayout-->
+<!--            android:id="@+id/ly_videos"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#000000"-->
+<!--            android:visibility="gone"-->
+<!--            app:columnCount="2"-->
+<!--            app:rowCount="2">-->
+
+<!--            <include layout="@layout/console_layout_multi_video" />-->
+
+<!--            <include layout="@layout/console_layout_multi_video" />-->
+
+<!--            <include layout="@layout/console_layout_multi_video" />-->
+
+<!--            <include layout="@layout/console_layout_multi_video" />-->
+<!--        </com.example.yiliaoyinian.views.MultiVideoLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/ly_emptyCamera"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:visibility="visible">-->
+
+<!--            <View-->
+<!--                android:id="@+id/view_center"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_centerInParent="true" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="46dp"-->
+<!--                android:layout_height="46dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:contentDescription="@null"-->
+<!--                android:src="@drawable/console_ic_warning3" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="68dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:maxLines="1"-->
+<!--                android:text="该床机未关联摄像头，无法操作"-->
+<!--                android:textColor="#d7d7d7"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_buy"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginTop="112dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:layout_toLeftOf="@+id/view_center"-->
+<!--                android:background="@drawable/console_button_buy"-->
+<!--                android:text="购买摄像头"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_union"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginTop="112dp"-->
+<!--                android:layout_toRightOf="@+id/view_center"-->
+<!--                android:background="@drawable/console_button_union"-->
+<!--                android:text="关联摄像头"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:textSize="14sp" />-->
+<!--        </RelativeLayout>-->
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_action"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ly_video"
+        android:background="#626262"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_quality"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:text="标清"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+        <ImageButton
+            android:id="@+id/ib_sound"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:src="@drawable/console_ic_video_sound" />
+
+        <ImageButton
+            android:id="@+id/ib_voice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:src="@drawable/console_ic_video_voice" />
+
+        <ImageButton
+            android:id="@+id/ib_multi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:src="@drawable/console_ic_video_window" />
+
+        <ImageButton
+            android:id="@+id/ib_full"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:src="@drawable/console_ic_video_full" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ly_bedPanelFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ly_action"
+        android:orientation="vertical" />
+
+    <FrameLayout
+        android:id="@+id/ly_connecting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/ly_bedPanelFragment"
+        android:layout_alignBottom="@id/ly_bedPanelFragment"
+        android:background="#30000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            style="@style/SpinKitView.ThreeBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="#ffffff" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/ly_bedPanelFragment"
+        android:layout_alignBottom="@id/ly_bedPanelFragment"
+        android:background="#b3ffffff"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#666666"
+        android:visibility="gone"
+        tools:text="错误提示信息"
+        tools:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/ly_ptz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/ly_bedPanelFragment"
+        android:layout_alignBottom="@id/ly_bedPanelFragment"
+        android:background="#f6f8fa"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="visible">
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/ib_ptzClose"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:contentDescription="@null"-->
+<!--            android:padding="15dp"-->
+<!--            android:src="@drawable/console_ic_ptz_close" />-->
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true">
+
+            <com.example.yiliaoyinian.views.PTZView
+                android:id="@+id/view_ptz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|left"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/console_ic_ptz_left" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal|top"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/console_ic_ptz_up" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|right"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/console_ic_ptz_right" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/console_ic_ptz_down" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

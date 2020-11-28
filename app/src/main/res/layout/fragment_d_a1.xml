@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments1.huanzhe.DAFragment1">
+
+
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#FF222222"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/fgg"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="健康数据" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/time_ll"
+        app:layout_constraintLeft_toRightOf="@+id/fgg"
+        app:layout_constraintTop_toTopOf="@+id/fgg"
+        app:layout_constraintBottom_toBottomOf="@+id/fgg"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="#FFA7A7A7"
+            android:textSize="13sp"
+            android:id="@+id/time_tv_jiankang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/xia_fuwu"
+            android:layout_width="12dp"
+            android:visibility="gone"
+            android:layout_marginLeft="6dp"
+            android:layout_height="12dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fgg"
+        app:layout_constraintBottom_toBottomOf="@+id/fgg"
+        android:textColor="#FF222222"
+        android:textSize="12sp"
+        android:text="全部"
+        android:layout_marginRight="16dp"
+        android:id="@+id/ffggj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="@+id/ffggj"
+        app:layout_constraintBottom_toBottomOf="@+id/ffggj"
+        app:layout_constraintRight_toLeftOf="@+id/ffggj"
+        android:padding="7dp"
+        android:id="@+id/quanbu"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/check_circl_fill0"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        app:layout_constraintRight_toLeftOf="@+id/quanbu"
+        app:layout_constraintTop_toTopOf="@+id/quanbu"
+        app:layout_constraintBottom_toBottomOf="@+id/quanbu"
+        android:textColor="#FF222222"
+        android:textSize="12sp"
+        android:text="异常"
+        android:layout_marginRight="20dp"
+        android:id="@+id/fgggh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="@+id/fgggh"
+        app:layout_constraintBottom_toBottomOf="@+id/fgggh"
+        app:layout_constraintRight_toLeftOf="@+id/fgggh"
+        android:padding="7dp"
+        android:id="@+id/yichang"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/check_circl_fill1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintTop_toBottomOf="@+id/fgg"
+        android:layout_marginTop="16dp"
+        android:id="@+id/recyclerview"
+        android:maxHeight="260dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview"
+        android:background="#FFF5F5F5"
+        android:id="@+id/jjj"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+
+    <LinearLayout
+        android:id="@+id/kji"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/jjj"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <com.qmuiteam.qmui.layout.QMUIButton
+                android:id="@+id/bt1"
+                android:textSize="12sp"
+                android:text="血压"
+                android:background="#FF59B683"
+                android:textColor="#FFFFFFFF"
+                android:layout_width="56dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+     <LinearLayout
+         android:gravity="center"
+         android:layout_weight="1"
+         android:layout_width="0dp"
+         android:layout_height="match_parent">
+         <com.qmuiteam.qmui.layout.QMUIButton
+             android:id="@+id/bt2"
+             android:textSize="12sp"
+             android:text="血糖"
+             android:background="#FFF2F2F2"
+             android:textColor="#FFA7A7A7"
+             android:layout_width="56dp"
+             android:layout_height="30dp"/>
+     </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <com.qmuiteam.qmui.layout.QMUIButton
+                android:id="@+id/bt3"
+                android:textSize="12sp"
+                android:text="体温"
+                android:background="#FFF2F2F2"
+                android:textColor="#FFA7A7A7"
+                android:layout_width="56dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <com.qmuiteam.qmui.layout.QMUIButton
+                android:id="@+id/bt4"
+                android:textSize="12sp"
+                android:text="脉搏"
+                android:background="#FFF2F2F2"
+                android:textColor="#FFA7A7A7"
+                android:layout_width="56dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <com.qmuiteam.qmui.layout.QMUIButton
+                android:id="@+id/bt5"
+                android:textSize="12sp"
+                android:text="心率"
+                android:background="#FFF2F2F2"
+                android:textColor="#FFA7A7A7"
+                android:layout_width="56dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.example.yiliaoyinian.AAChartCoreLib.AAChartCreator.AAChartView
+        android:id="@+id/chart1"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kji"
+        android:layout_width="match_parent"
+        android:layout_height="260dp" />
+
+<!--    <com.github.mikephil.charting.charts.LineChart-->
+<!--        android:id="@+id/chart1"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/kji"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="220dp" />-->
+<!--    <com.github.mikephil.charting.charts.LineChart-->
+<!--        android:id="@+id/chart2"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/kji"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="220dp" />-->
+<!--    <com.github.mikephil.charting.charts.LineChart-->
+<!--        android:id="@+id/chart3"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/kji"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="220dp" />-->
+<!--    <com.github.mikephil.charting.charts.LineChart-->
+<!--        android:id="@+id/chart4"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/kji"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="220dp" />-->
+<!--    <com.github.mikephil.charting.charts.LineChart-->
+<!--        android:id="@+id/chart5"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/kji"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="220dp" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

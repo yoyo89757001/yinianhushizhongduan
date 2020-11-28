@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.shuju.Fragment3">
+
+
+    <RelativeLayout
+        android:background="#FF59B683"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#FFFFFFFF"
+            android:text="管理"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/laba"
+            android:padding="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/laba22"
+            android:layout_width="46dp"
+            android:layout_height="46dp"/>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#FF59B683"
+        android:layout_width="match_parent"
+        android:layout_height="112dp">
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:qmui_corner_radius="40dp"
+            android:id="@+id/head"
+            android:src="@drawable/defo_bg"
+            app:qmui_border_width="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@+id/head"
+            android:layout_width="0dp"
+            android:id="@+id/ziliao_ll"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/name"
+                android:text="姓名"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="查看个人资料"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:background="#FFF5F5F5"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:textColor="#FF4C4C4C"
+            android:text="教育中心"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="#FF4C4C4C"
+            android:textSize="15sp"
+            android:text="更多"
+            android:visibility="gone"
+            android:id="@+id/gengduo"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <View
+        android:background="#FFF5F5F5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+<com.scwang.smart.refresh.layout.SmartRefreshLayout
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.scwang.smart.refresh.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+
+
+
+</LinearLayout>

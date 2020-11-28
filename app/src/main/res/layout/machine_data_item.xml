@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="165.5dp"
+    android:layout_height="101.5dp"
+    android:background="@drawable/zidonghuoqu122"
+    android:layout_margin="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="4dp"
+        android:id="@+id/k11"
+        android:padding="6dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/shezhi_bg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+        android:text="测试摄像头"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/k11"
+        app:layout_constraintTop_toTopOf="@+id/k11"
+        app:layout_constraintBottom_toBottomOf="@+id/k11"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="2dp"
+        android:textColor="#FF333333"
+        android:id="@+id/title"
+        app:qmui_minTextSize="6sp"
+        app:qmui_maxTextSize="12sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+        <ImageView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            android:layout_width="60dp"
+            android:id="@+id/image"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="58dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

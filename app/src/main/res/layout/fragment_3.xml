@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.shuju.Fragment3">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:background="#FF59B683"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="颐年智慧病房"
+            android:id="@+id/mytitle"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="44dp"
+                android:id="@+id/saoma"
+                android:padding="12dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/jiajia"
+                android:layout_height="44dp"/>
+
+            <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+                android:id="@+id/paintName"
+                android:layout_toRightOf="@+id/mytitle"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:gravity="end"
+                android:visibility="gone"
+                android:text="当前未绑定患者"
+                app:qmui_maxTextSize="14sp"
+                app:qmui_minTextSize="6sp"
+                android:textColor="#ffffff"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@+id/saoma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        android:orientation="vertical"
+        android:id="@+id/refreshLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.scwang.smart.refresh.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <com.qmuiteam.qmui.widget.QMUIFontFitTextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#FF4C4C4C"
+        android:textSize="14sp"
+        app:qmui_minTextSize="6sp"
+        app:qmui_maxTextSize="14sp"
+        android:id="@+id/top_tv"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:text="共12条数据，异常10条，正常10条"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/top_tv"
+        android:maxHeight="200dp"
+        android:id="@+id/recyclerview"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="#FFF5F5F5"
+    app:layout_constraintTop_toBottomOf="@+id/recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.example.yiliaoyinian.views.ReboundHScrollView
+        android:id="@+id/gbg"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:id="@+id/l1"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="我的设备"
+                android:textSize="16sp"
+                android:textColor="#FF59B683"
+                android:id="@+id/fuwu"
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:id="@+id/l2"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="血压监测"
+                android:textSize="14sp"
+                android:padding="16dp"
+                android:textColor="#FFB6B6B6"
+                android:id="@+id/zhangzhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:id="@+id/l3"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="视频监控"
+                android:textSize="14sp"
+                android:padding="16dp"
+                android:textColor="#FFB6B6B6"
+                android:id="@+id/zhiban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:id="@+id/l4"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="16dp"
+                android:id="@+id/tizheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体征监测"
+                android:textColor="#FFB6B6B6"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:id="@+id/l5"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="16dp"
+                    android:id="@+id/lumi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="智能网关"
+                    android:textColor="#FFB6B6B6"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.example.yiliaoyinian.views.ReboundHScrollView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpage"
+        app:layout_constraintTop_toBottomOf="@+id/gbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

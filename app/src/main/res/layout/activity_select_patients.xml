@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments1.fuwu.SelectPatientsActivity">
+
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FF59B683"
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="选择患者"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/c1"
+        android:layout_height="56dp">
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="患者姓名"
+            android:id="@+id/n1"
+            android:minWidth="86dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:layout_marginRight="16dp"
+            android:id="@+id/im1"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/you_fuw"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:textColor="#333333"
+            android:hint="请输入患者姓名"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:id="@+id/name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/n1"
+            android:textColorHint="#D7D7D7"
+            android:background="@null"
+            android:layout_marginRight="12dp"
+            app:layout_constraintRight_toLeftOf="@+id/im1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <View
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#D7D7D7"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--   //////////////////////////////////////////////////////////////// -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/c2"
+        android:layout_height="56dp">
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="手机号"
+            android:id="@+id/n2"
+            android:minWidth="86dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:layout_marginRight="16dp"
+            android:id="@+id/im2"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/you_fuw"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:textColor="#333333"
+            android:hint="请输入手机号"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:inputType="phone"
+            android:id="@+id/phone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/n2"
+            android:textColorHint="#D7D7D7"
+            android:background="@null"
+            android:layout_marginRight="12dp"
+            app:layout_constraintRight_toLeftOf="@+id/im2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <View
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#D7D7D7"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    //////////////////////////////////////////-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/c3"
+        android:layout_height="56dp">
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="楼栋"
+            android:id="@+id/n3"
+            android:minWidth="86dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:layout_marginRight="16dp"
+            android:id="@+id/im3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/xia_fuwu"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:textColor="#333333"
+            android:hint="请选择楼栋"
+            android:textSize="14sp"
+            android:id="@+id/building"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/n3"
+            android:textColorHint="#D7D7D7"
+            android:background="@null"
+            android:focusableInTouchMode="false"
+            android:layout_marginRight="12dp"
+            app:layout_constraintRight_toLeftOf="@+id/im3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <View
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#D7D7D7"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qmuiteam.qmui.layout.QMUIButton
+            android:layout_width="75dp"
+            android:textColor="#59B683"
+            android:textSize="12sp"
+            android:background="@null"
+            android:layout_marginRight="12dp"
+            android:text="重置"
+            android:id="@+id/replace"
+            android:layout_height="36dp"/>
+
+        <com.qmuiteam.qmui.layout.QMUIButton
+            android:layout_width="75dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="12dp"
+            android:background="#59B683"
+            android:textSize="12sp"
+            android:text="查询"
+            android:id="@+id/select"
+            android:layout_height="36dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:text="患者列表"
+        android:textStyle="bold"
+        android:paddingLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:background="#F5F5F5"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="4dp"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

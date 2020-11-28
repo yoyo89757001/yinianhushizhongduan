@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ui.lumi.wangguan.AddWGActivity2">
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FF59B683"
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <View
+            android:id="@+id/fanhui"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/fanhui2"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+        <TextView
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:text="网关重置"
+            android:id="@+id/myTitle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--        <ImageView-->
+        <!--            android:src="@drawable/san2"-->
+        <!--            android:layout_width="40dp"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:id="@+id/shezhi"-->
+        <!--            android:layout_marginRight="2dp"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_height="match_parent"/>-->
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/im11"
+        android:scaleType="fitCenter"
+        android:background="#f8f9fb"
+        android:src="@drawable/gateway1_reset"
+        app:layout_constraintTop_toBottomOf="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/im11"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:id="@+id/fggg"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/common_text"
+        android:text="长按开关键10秒以上，直到黄灯闪烁后松开，\n即重置成功"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+    <com.qmuiteam.qmui.layout.QMUIButton
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/xiayibu"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:text="下一步"
+        android:background="#40333333"
+        android:gravity="center"
+        android:layout_marginRight="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_ll"
+        android:gravity="center"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/xiayibu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ImageView
+            android:id="@+id/imbt"
+            android:background="@drawable/wxuanzhong"
+            android:layout_width="12dp"
+            android:layout_height="12dp"/>
+        <TextView
+            android:textColor="#50333333"
+            android:text="已确认上述操作"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

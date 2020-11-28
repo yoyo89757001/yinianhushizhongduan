@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragmengmain.Fragment1">
+
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:background="#FF59B683"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="颐年智慧病房"
+            android:id="@+id/mytitle"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/topbutton"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                android:layout_width="40dp"
+                android:id="@+id/head"
+                app:qmui_border_width="0dp"
+                app:qmui_corner_radius="10dp"
+                android:layout_marginRight="12dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/name"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:text="马冬梅"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:gravity="center_vertical"
+     android:id="@+id/jjk"
+     android:visibility="gone"
+     android:background="#FEFCEC"
+     android:orientation="horizontal"
+     app:layout_constraintLeft_toLeftOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/top"
+     android:layout_width="match_parent"
+     android:layout_height="36dp">
+
+     <ImageView
+         app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         android:layout_marginLeft="12dp"
+         android:src="@drawable/laba"
+         android:id="@+id/ddf"
+         android:layout_width="16dp"
+         android:layout_height="16dp"/>
+
+     <ImageView
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintRight_toRightOf="parent"
+         android:layout_marginRight="12dp"
+         android:id="@+id/hhjf"
+         android:src="@drawable/youju"
+         android:layout_width="16dp"
+         android:layout_height="16dp"/>
+
+
+
+     <com.gongwen.marqueen.SimpleMarqueeView
+         android:layout_marginRight="10dp"
+         android:layout_marginLeft="10dp"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintLeft_toRightOf="@+id/ddf"
+         app:layout_constraintRight_toLeftOf="@+id/hhjf"
+         android:id="@+id/tv_marquee"
+         android:layout_width="0dp"
+         android:layout_height="36dp"
+         android:flipInterval="4000"
+         android:inAnimation="@anim/in_right"
+         android:outAnimation="@anim/out_left"
+         app:marqueeAnimDuration="3200"
+         app:smvTextColor="#F86E21"
+         app:smvTextEllipsize="end"
+         app:smvTextGravity="center_vertical"
+         app:smvTextSingleLine="true"
+         app:smvTextSize="14sp" />
+
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/gbg"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/jjk"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:id="@+id/l1"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="我的服务"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:id="@+id/fuwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:id="@+id/l2"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="我的患者"
+                android:textSize="14sp"
+                android:textColor="#FFC1C1C2"
+                android:id="@+id/zhangzhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/l3"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="待入科"
+                android:textSize="14sp"
+                android:textColor="#FFC1C1C2"
+                android:id="@+id/zhiban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gbg"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

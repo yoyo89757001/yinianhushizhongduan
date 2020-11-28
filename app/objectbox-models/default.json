@@ -1,0 +1,317 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7964859150498525168",
+      "lastPropertyId": "18:6924882711201248372",
+      "name": "SaveInfoBean",
+      "properties": [
+        {
+          "id": "1:6860073377712313898",
+          "name": "id",
+          "type": 6,
+          "flags": 131
+        },
+        {
+          "id": "2:2050881845578132402",
+          "name": "isLogin",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "3:5559994423479871046",
+          "name": "sereveURL",
+          "type": 9
+        },
+        {
+          "id": "4:7999880611374004532",
+          "name": "nurseName",
+          "type": 9
+        },
+        {
+          "id": "5:183822887556472360",
+          "name": "headImg",
+          "type": 9
+        },
+        {
+          "id": "6:4700804987976780925",
+          "name": "phone",
+          "type": 9
+        },
+        {
+          "id": "7:2815604400882071070",
+          "name": "nurseCode",
+          "type": 9
+        },
+        {
+          "id": "8:1929632615556268648",
+          "name": "token",
+          "type": 9
+        },
+        {
+          "id": "9:1896147778419955844",
+          "name": "registrationId",
+          "type": 9
+        },
+        {
+          "id": "10:4990472886366389967",
+          "name": "patientCode",
+          "type": 9
+        },
+        {
+          "id": "11:1042145982273752679",
+          "name": "patientId",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "12:6628130098165024995",
+          "name": "patientName",
+          "type": 9
+        },
+        {
+          "id": "13:3622004179905212278",
+          "name": "patientAge",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "14:9150235311332574595",
+          "name": "url",
+          "type": 9
+        },
+        {
+          "id": "15:5906991372489639204",
+          "name": "ysToken",
+          "type": 9
+        },
+        {
+          "id": "16:6462902438679397772",
+          "name": "appKey",
+          "type": 9
+        },
+        {
+          "id": "17:7508993777963604722",
+          "name": "appSecret",
+          "type": 9
+        },
+        {
+          "id": "18:6924882711201248372",
+          "name": "did",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:8466647023414021004",
+      "lastPropertyId": "11:5514377396609041141",
+      "name": "SphygmomanometerDataBean",
+      "properties": [
+        {
+          "id": "1:3716024623394902136",
+          "name": "id",
+          "type": 6,
+          "flags": 3
+        },
+        {
+          "id": "2:495975584148722477",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:8197668119555342211",
+          "name": "DoctorName",
+          "type": 9
+        },
+        {
+          "id": "4:2237710838892425946",
+          "name": "time",
+          "type": 9
+        },
+        {
+          "id": "5:4198131967875297359",
+          "name": "bloodPressure1",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "6:7311977243375681534",
+          "name": "bloodPressure2",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "7:9216920535726065547",
+          "name": "heartRate",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "8:1143862737542164690",
+          "name": "patientCode",
+          "type": 9
+        },
+        {
+          "id": "9:7259755319131053359",
+          "name": "patientId",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "10:7310981702650363934",
+          "name": "deviceCode",
+          "type": 9
+        },
+        {
+          "id": "11:5514377396609041141",
+          "name": "patientName",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:9067878170052871034",
+      "lastPropertyId": "2:6126233869015875017",
+      "name": "UserNameBean",
+      "properties": [
+        {
+          "id": "1:7382580238382211919",
+          "name": "id",
+          "type": 6,
+          "flags": 3
+        },
+        {
+          "id": "2:6126233869015875017",
+          "name": "userName",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:532821135358995711",
+      "lastPropertyId": "18:8392177337055415896",
+      "name": "WGInfoSave",
+      "properties": [
+        {
+          "id": "1:3336803584142391619",
+          "name": "id",
+          "type": 6,
+          "flags": 3
+        },
+        {
+          "id": "2:2520274358365884762",
+          "name": "isOPen",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "3:6694229967632706036",
+          "name": "did",
+          "type": 9
+        },
+        {
+          "id": "4:5428958585976644015",
+          "name": "argb",
+          "type": 9
+        },
+        {
+          "id": "5:5560362382817699759",
+          "name": "light",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "6:7884336224782163592",
+          "name": "modle",
+          "type": 9
+        },
+        {
+          "id": "7:9153838255604898358",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "8:7908952581322482380",
+          "name": "soundValue",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "9:5706744681002503838",
+          "name": "firmwareVersion",
+          "type": 9
+        },
+        {
+          "id": "10:1056454537912682775",
+          "name": "ssid",
+          "type": 9
+        },
+        {
+          "id": "11:6037832805979034357",
+          "name": "mac",
+          "type": 9
+        },
+        {
+          "id": "12:994410800563657979",
+          "name": "ip",
+          "type": 9
+        },
+        {
+          "id": "13:3195100329696586196",
+          "name": "rssi",
+          "type": 9
+        },
+        {
+          "id": "14:5700375244858665237",
+          "name": "weizhi",
+          "type": 9
+        },
+        {
+          "id": "15:1112079831022638724",
+          "name": "modelType",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "16:879948131678526514",
+          "name": "parentDid",
+          "type": 9
+        },
+        {
+          "id": "17:3024340242319879287",
+          "name": "state",
+          "type": 5,
+          "flags": 4
+        },
+        {
+          "id": "18:8392177337055415896",
+          "name": "photo",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "5:532821135358995711",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    3892857144065594342
+  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    1824747049376263001,
+    1494078360597367126,
+    5358265668596159365
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

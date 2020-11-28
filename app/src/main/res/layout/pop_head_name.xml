@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="44dp">
+        
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/xunfangjilu"
+            android:layout_width="18dp"
+            android:layout_height="18dp"/>
+
+        <TextView
+            android:text="寻房记录"
+            android:layout_marginLeft="13dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v1"
+        app:layout_constraintTop_toBottomOf="@+id/l1"
+        android:background="#DDDDDD"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/v1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/zhibanbiao"
+            android:layout_width="18dp"
+            android:layout_height="18dp"/>
+
+        <TextView
+            android:text="值班表"
+            android:layout_marginLeft="13dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v2"
+        app:layout_constraintTop_toBottomOf="@+id/l2"
+        android:background="#DDDDDD"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/v2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/tuichu"
+            android:layout_width="18dp"
+            android:layout_height="18dp"/>
+
+        <TextView
+            android:text="退出"
+            android:layout_marginLeft="13dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
